@@ -1,0 +1,176 @@
+body
+ +light
+ color: $text-color
+
+img
+ max-width: 100% //картинка не может быть больше своего родителя
+
+button
+  border: none 
+  &:hover
+    cursor: pointer
+  &:focus
+    outline: none
+
+ul
+ padding: 0
+  
+
+/*Настройка секций*/
+.section
+ padding: 100px 0 
+ &-title
+  font-size: 30px
+  +bold
+  text-align: center
+  text-transform: uppercase
+ &__title //внешнюю геометрию задаем элементам по БЭМ, а не блокам
+  margin-bottom: 100px
+
+/*Кнопка в навигации*/
+.button-o
+ padding: 17px 22px
+ font-size: 12px
+ +bold
+ text-transform: uppercase
+ border: 2px solid $primary
+ color: $primary
+ background-color: transparent
+ text-decoration: none
+
+/*Кнопка по сайту*/
+.button
+ padding: 25px 45px
+ text-transform: uppercase
+ border: none
+ background-color: $primary
+ color: #fff
+ +bold
+ text-decoration: none
+ &:hover
+   cursor: pointer
+
+
+ /*Кнопка примерить онлайн в секции каталоге*/
+ &-fitting
+  color: $primary
+  background-color: #fff
+ /*Кнопка заказать в секции каталоге*/
+ &-add
+  background-color: lighten($primary, 10%)
+  color: #fff
+  /*Кнопка лайк в секции каталоге*/
+ &-like
+  background-color: $primary
+  height: 30px
+  width: 30px
+  border: none
+  display: flex
+  align-items: center
+
+/*Фоновый цвет вторичных секций*/
+.bg-secondary
+ background-color: $bg-secondary
+
+/*Оформление полей формы*/
+.input
+ height: 80px
+ padding-left: 30px
+ border: 1px solid #ddd
+
+/*Оформление checkbox формы*/
+.checkbox
+ display: none //стандартный убираем
+ &:checked + label:before
+  background-color: $primary
+  //background-image: url(../img/offer/check.png)
+ &-label
+  display: flex
+  align-items: center
+  margin-right: 40px
+  &:hover
+   cursor: pointer
+  &:before
+   content: ''
+   width: 30px
+   height: 30px
+   border: 1px solid #ddd
+   margin-right: 20px
+
+/*Оформление select формы*/
+.select
+ height: 80px
+ width: 100%
+ border: 1px solid #ddd
+ position: relative
+ &:after //каретка 
+  content: ''
+  position: absolute
+  top: 50%
+  right: 2%
+  transform: translateY(-50%)
+  background: url('../img/offer/arrow-down.png') no-repeat center
+  background-size: 100%
+  width: 20px
+  height: 20px
+ &:hover
+  cursor: pointer
+ &_checked
+  padding-left: 30px
+  line-height: 80px
+ &__dropdown
+  display: none
+  margin: 0
+  position: absolute
+  top: 78px
+  width: 100%
+  background-color: #fff
+  border: 1px solid #ddd
+  list-style: none
+  &_open
+   display: block 
+ &__option
+  padding: 20px 30px
+  &:hover
+   background-color: $bg-secondary
+
+/*стрелка прокрутки вверх*/
+.go-top 
+	display: none
+	position: fixed
+	right: 2%
+	bottom: 25%
+ width: 20px
+	cursor: pointer
+ opacity: 0.4
+ //z-index: 100
+ &:hover
+  opacity: 1
+
+
+
+
+
+@media (max-width: 576px)
+ .button-o
+  font-size: 10px
+ .section
+  padding: 40px 0
+  &-title
+   font-size: 24px
+  &__title
+   margin-bottom: 50px
+
+@media (max-width: 425px)
+ .checkbox
+   &-label
+    //margin-right: 5px
+    &:before
+     //margin-right: 5px
+ .button
+  padding: 25px 15px
+  &_lg
+   font-size: 10px
+  &-like
+   height: 20px
+   width: 20px
