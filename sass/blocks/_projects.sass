@@ -1,0 +1,37 @@
+.projects
+ &-block
+  display: flex
+  flex-wrap: wrap //переносятся элементы если не помещяются
+ &-card
+  margin-right: 30px
+  width: 172px
+  min-height: 172px
+  text-align: center
+  background-color: $bg-secondary
+  &__image
+   padding-top: 22px
+  &__text
+   margin: 24px auto
+   width: 132px
+   h2
+    font-size: 18px
+    //font-weight: 400
+    line-height: 26px
+   p
+    margin-top: 9px
+    color: #6d6e71
+    font-style: italic
+    line-height: 18px
+
+@media (max-width: 991px)
+ .features
+  &-block
+   &__item
+    flex-basis: 50%
+
+@media (max-width: 768px)
+ .features
+  &-block
+   &__item
+    flex-basis: 100%
+    margin-bottom: 50px
