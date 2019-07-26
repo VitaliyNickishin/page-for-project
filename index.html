@@ -6,20 +6,21 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>Project</title>
  <main class="hero">
-   <section class="table">
-    <div class="container">
+  <div class="container">
       <div class="table-title">
         <h1>Project</h1>
       </div><!-- /.title -->
+    </div><!-- /.container -->
+   <section class="table">
+    <div class="container">
       <div class="table-block">
-       
-        <div class="table-header">
-         <div class="table-header-checkbox">
-          <input type="checkbox" class="table-checkbox">
-         </div><!-- table-header__checkbox -->
+         <div class="table-block-checkbox">
+          <input type="checkbox" class="table-checkbox" id="check1">
+          <label for="check1" class="table-checkbox-label"></label>
+         </div><!-- table-block-checkbox -->
          
-         <div class="table-header-select">
-           <form action="select1.php" method="post" class="table-header-select__form1 form">
+         <div class="table-block-select">
+           <form action="select1.php" method="post" class="table-block-select__form1 form">
              <select>
                <option>#</option>
                <option value="project #1723">project #1723</option>
@@ -28,7 +29,7 @@
                <option value="project #1726">project #1726</option>
              </select>
            </form>
-           <form action="select2.php" method="post" class="table-header-select__form2 form">
+           <form action="select2.php" method="post" class="table-block-select__form2 form">
              <select>
                <option>Client</option>
                <option value="Stella">Stella</option>
@@ -37,25 +38,59 @@
                <option value="Bill">Bill</option>
              </select>
            </form>
-           <form action="select3.php" method="post" class="table-header-select__form3 form">
+           <form action="select3.php" method="post" class="table-block-select__form3 form">
              <select>
                <option>Status</option>
-               <option value="Чебурашка">Sent</option>
-               <option value="Крокодил Гена">Draft</option>
-               <option value="Шапокляк">Draft</option>
-               <option value="Крыса Лариса">Draft</option>
+               <option value="Sent">Sent</option>
+               <option value="Draft">Draft</option>
              </select>
            </form>
-
-         </div><!-- /.table-header__select -->
-          
-        </div><!-- table-header -->
-        <div class="table-row">
-         
-          
-        </div><!-- /.row -->
-
+         </div><!-- /.table-block-select -->
       </div><!-- /.table-block -->
+
+      <div class="table-block table-block-row">
+        <div class="table-block-checkbox">
+          <input type="checkbox" class="table-checkbox" id="check2">
+          <label for="check2" class="table-checkbox-label"></label>
+        </div><!-- table-block-checkbox -->
+        
+        <div class="table-block-select">
+         <div class="table-block-select__number">
+          <p>Project #1723</p>
+         </div><!-- /.table-block-select__number -->
+         <div class="table-block-select__name">
+          <p>Stella</p>
+         </div><!-- /.table-block-select__name -->
+          <form action="select4.php" method="post" class="table-block-select__form4 form">
+            <select>
+              <option value="Sent">Sent</option>
+              <option value="Draft">Draft</option>
+            </select>
+          </form>
+        </div><!-- /.table-block-select -->
+     </div><!-- /.table-block -->
+
+      <div class="table-block table-block-row">
+        <div class="table-block-checkbox">
+          <input type="checkbox" class="table-checkbox" id="check3">
+          <label for="check3" class="table-checkbox-label"></label>
+        </div><!-- table-block-checkbox -->
+        
+        <div class="table-block-select">
+         <div class="table-block-select__number">
+          <p>Project #1720</p>
+         </div><!-- /.table-block-select__number -->
+         <div class="table-block-select__name">
+          <p>IT corp international</p>
+         </div><!-- /.table-block-select__name -->
+          <form action="select5.php" method="post" class="table-block-select__form5 form">
+            <select>
+              <option value="Draft">Draft</option>
+              <option value="Sent">Sent</option>
+            </select>
+          </form>
+        </div><!-- /.table-block-select -->
+     </div><!-- /.table-block -->
      </div><!-- /.container -->
    </section>
 

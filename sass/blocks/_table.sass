@@ -1,35 +1,66 @@
 .table
  &-title
-  text-align: center
+  margin: 56px 0 42px 476px
+  //text-align: center
   h1
    +bold
    font-size: 30px
-   //font-weight: 700
+   font-weight: 700
    //line-height: 26px
  &-block
+  margin-bottom: 5px
   display: flex
+  //flex-wrap: wrap
   align-items: center
   max-width: 980px
   height: 45px
   background-color: $bg-secondary
-  
- &-header
-  display: flex
-  //flex-wrap: wrap
+  &:last-child
+   margin: 0
   &-checkbox
-   margin-left: 15px
-   display: flex
+   margin-left: 10px
   &-select
+   margin-left: 28px
    display: flex
+   
    &__form1
-    margin-left: 15px
-    background-position: 20%
+    //min-width: 246px
+    background-position: 16%
    &__form2
-    margin-left: 180px
+    margin-left: 167px
     background-position: 85%
    &__form3
     margin-left: 209px
     background-position: 90%
- &-row
+   &__form4
+    margin-left: 250px
+    background-position: 95%
+    border-bottom: 2px solid #dbdcdd
+    select
+     text-transform: capitalize
+     min-width: 90px
+   &__form5
+    margin-left: 157px
+    background-position: 95%
+    border-bottom: 2px solid #dbdcdd
+    select
+     text-transform: capitalize
+     min-width: 90px
+   &__number
+    max-width: 246px
+    font-weight: 700
+    line-height: 26px
+    text-transform: uppercase
+   &__name
+    max-width: 246px
+    margin-left: 179px
+    font-weight: 700
+    line-height: 26px
+  &-row
+   opacity: 0.5
+   &:hover
+    box-shadow: 0 6px 16px rgba(51, 51, 51, 0.07)
+    opacity: 1
+
   
  

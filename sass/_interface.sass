@@ -2,6 +2,7 @@ body
  //+light
  color: $text-color
  background-color: $bg-body
+ font-size: 14px
 
 img
  max-width: 100% //картинка не может быть больше своего родителя
@@ -20,19 +21,33 @@ ul
  padding: 0
 
  // Style for "checkbox"
-.table-checkbox 
- width: 20px
- height: 20px
- border: 1px solid #bbbdbf
- background-color: $bg-secondary 
+.table-checkbox
+ display: none
+ &:checked + label:before
+  background-color: $active
+  background-image: url(../img/tick.png)
+  background-repeat: no-repeat
+  background-position: center
+  border-color: $active
+ &-label
+  display: flex
+  &:hover
+   cursor: pointer
+   background-color: #c1c1be
+   border-radius: 2px
+  &:before
+   content: ''
+   width: 20px
+   height: 20px
+   border: 1px solid #bbbdbf
+   border-radius: 2px
 
 .form
  background-image: url('../img/arrow.png')
  background-repeat: no-repeat
  //background-position: center
  //overflow: hidden
- &:focus
-  border: 0
+ 
  select
   //width: 47px
   //height: 9px
@@ -49,6 +64,8 @@ ul
   -webkit-appearance: none
   -moz-appearance: none
   appearance: none
+  &:focus
+   outline: none
   
 
 // select
@@ -56,7 +73,7 @@ ul
 //  -moz-appearance: none;
 //  appearance: none;
 
-Для поддер
+
 // карточки проекта
 .card
  width: 172px
@@ -66,14 +83,14 @@ ul
  &-img
   padding-top: 22px
  &-text
-  margin: 24px auto
+  margin: 14px auto
   width: 132px
   h2
    font-size: 18px
    //font-weight: 400
    line-height: 26px
   p
-   margin-top: 9px
+   //margin-top: 9px
    font-size: 14px
    color: #6d6e71
    font-style: italic
@@ -141,61 +158,7 @@ ul
  padding-left: 30px
  border: 1px solid #ddd
 
-/*Оформление checkbox формы*/
-.checkbox
- display: none //стандартный убираем
- &:checked + label:before
-  //background-color: $primary
-  //background-image: url(../img/offer/check.png)
- &-label
-  display: flex
-  align-items: center
-  margin-right: 40px
-  &:hover
-   cursor: pointer
-  &:before
-   content: ''
-   width: 30px
-   height: 30px
-   border: 1px solid #ddd
-   margin-right: 20px
 
-/*Оформление select формы*/
-.select
- height: 80px
- width: 100%
- border: 1px solid #ddd
- position: relative
- &:after //каретка 
-  content: ''
-  position: absolute
-  top: 50%
-  right: 2%
-  transform: translateY(-50%)
-  background: url('../img/offer/arrow-down.png') no-repeat center
-  background-size: 100%
-  width: 20px
-  height: 20px
- &:hover
-  cursor: pointer
- &_checked
-  padding-left: 30px
-  line-height: 80px
- &__dropdown
-  display: none
-  margin: 0
-  position: absolute
-  top: 78px
-  width: 100%
-  background-color: #fff
-  border: 1px solid #ddd
-  list-style: none
-  &_open
-   display: block 
- &__option
-  padding: 20px 30px
-  &:hover
-   //background-color: $bg-secondary
 
 /*стрелка прокрутки вверх*/
 .go-top 
