@@ -60,18 +60,20 @@ h1, h2, p {
   margin: 0;
 }
 
-button {
-  border: none;
+input {
+  border: 0;
 }
 
-button:hover {
-  cursor: pointer;
-}
-
-button:focus {
+input:focus {
   outline: none;
 }
 
+/* button
+ border: none
+ &:hover
+  cursor: pointer
+ &:focus
+  outline: none */
 ul {
   padding: 0;
 }
@@ -108,12 +110,12 @@ ul {
   border-radius: 2px;
 }
 
-.form {
+.arrow {
   background-image: url("../img/arrow.png");
   background-repeat: no-repeat;
 }
 
-.form select {
+.arrow select {
   min-width: 76px;
   border: 0;
   background-color: transparent;
@@ -127,7 +129,7 @@ ul {
   appearance: none;
 }
 
-.form select:focus {
+.arrow select:focus {
   outline: none;
 }
 
@@ -169,102 +171,24 @@ ul {
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
-/*Кнопка в навигации*/
-.button-o {
-  padding: 17px 22px;
-  font-size: 12px;
-  font-family: 'Proxima Nova Semibold', sans-serif;
-  text-transform: uppercase;
-  background-color: transparent;
-  text-decoration: none;
+.input {
+  width: 365px;
+  border-bottom: 2px solid #dbdcdd;
 }
 
-/*Кнопка по сайту*/
 .button {
-  padding: 25px 45px;
   text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1.8px;
   border: none;
-  color: #fff;
+  background-color: transparent;
   font-family: 'Proxima Nova Semibold', sans-serif;
-  text-decoration: none;
-  /*Кнопка примерить онлайн в секции каталоге*/
-  /*Кнопка заказать в секции каталоге*/
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .button:hover {
   cursor: pointer;
-}
-
-.button-fitting {
-  background-color: #fff;
-}
-
-.button-add {
-  color: #fff;
-  /*Кнопка лайк в секции каталоге*/
-}
-
-.button-like {
-  height: 30px;
-  width: 30px;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/*Фоновый цвет вторичных секций*/
-/*Оформление полей формы*/
-.input {
-  height: 80px;
-  padding-left: 30px;
-  border: 1px solid #ddd;
-}
-
-/*стрелка прокрутки вверх*/
-.go-top {
-  display: none;
-  position: fixed;
-  right: 2%;
-  bottom: 25%;
-  width: 20px;
-  cursor: pointer;
-  opacity: 0.4;
-}
-
-.go-top:hover {
-  opacity: 1;
-}
-
-@media (max-width: 576px) {
-  .button-o {
-    font-size: 10px;
-  }
-  .section {
-    padding: 40px 0;
-  }
-  .section-title {
-    font-size: 24px;
-  }
-  .section__title {
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 425px) {
-  .button {
-    padding: 25px 15px;
-  }
-  .button_lg {
-    font-size: 10px;
-  }
-  .button-like {
-    height: 20px;
-    width: 20px;
-  }
 }
 
 /*Настройка шрифтов*/
@@ -367,6 +291,53 @@ ul {
   opacity: 1;
 }
 
+@media (max-width: 991px) {
+  .table-title {
+    margin: 56px 0 42px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-title {
+    margin: 46px 0 32px;
+  }
+  .table-block-checkbox {
+    margin-left: 5px;
+  }
+  .table-block-select {
+    margin-left: 18px;
+  }
+  .table-block-select__form2 {
+    margin-left: 0;
+    background-position: 85%;
+  }
+  .table-block-select__form3 {
+    margin-left: 0;
+    background-position: 90%;
+  }
+  .table-block-select__form4 {
+    margin-left: 0;
+    background-position: 95%;
+  }
+  .table-block-select__form4 select {
+    min-width: 90px;
+  }
+  .table-block-select__form5 {
+    margin-left: 0;
+    background-position: 95%;
+  }
+  .table-block-select__form5 select {
+    min-width: 90px;
+  }
+  .table-block-select__number {
+    margin-left: 0;
+  }
+  .table-block-select__name {
+    margin-left: 0;
+  }
+}
+
 .projects-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,6 +361,135 @@ ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+.form {
+  padding-top: 55px;
+}
+
+.form__block {
+  min-height: 328px;
+  background-color: #fff;
+}
+
+.form__project {
+  padding-left: 31px;
+}
+
+.form__title {
+  padding: 32px 0 26px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.form__group {
+  padding-right: 45px;
+}
+
+.form__group_btn {
+  padding-right: 18px;
+}
+
+.form__label {
+  display: block;
+  color: #6d6e71;
+  font-size: 17px;
+}
+
+.form__label span {
+  padding-left: 3px;
+  color: #c53d58;
+  font-size: 12px;
+}
+
+.form__btn-cancel {
+  padding: 18px 29px 17px 36px;
+  border: 2px solid #576b87;
+  border-radius: 5px;
+  color: #576b87;
+}
+
+.form__btn-cancel:hover {
+  background-color: #376b8b;
+  color: #fff;
+}
+
+.form__btn-cancel:focus {
+  background-color: #112a42;
+  border-color: #112a42;
+  color: #fff;
+}
+
+.form__btn-add {
+  padding: 18px 35px 17px;
+  background-color: #ffee36;
+  border-radius: 5px;
+  color: #253244;
+}
+
+.form__btn-add:hover {
+  background-color: #f1e76e;
+  color: #fff;
+}
+
+.form__btn-add:focus {
+  background-color: #c1c1be;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .form__group {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .form__group_btn {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+  .form__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form__block {
+    padding: 0 30px;
+  }
+  .form__project {
+    padding: 0;
+  }
+  .form__title {
+    text-align: center;
+  }
+  .form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+  .form__group {
+    padding: 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .form__btn-cancel {
+    margin-bottom: 20px;
+  }
+  .form__input {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

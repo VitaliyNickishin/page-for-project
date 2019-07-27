@@ -20,7 +20,7 @@
          </div><!-- table-block-checkbox -->
          
          <div class="table-block-select">
-           <form action="select1.php" method="post" class="table-block-select__form1 form">
+           <form action="select1.php" method="post" class="table-block-select__form1 arrow">
              <select>
                <option>#</option>
                <option value="project #1723">project #1723</option>
@@ -29,7 +29,7 @@
                <option value="project #1726">project #1726</option>
              </select>
            </form>
-           <form action="select2.php" method="post" class="table-block-select__form2 form">
+           <form action="select2.php" method="post" class="table-block-select__form2 arrow">
              <select>
                <option>Client</option>
                <option value="Stella">Stella</option>
@@ -38,7 +38,7 @@
                <option value="Bill">Bill</option>
              </select>
            </form>
-           <form action="select3.php" method="post" class="table-block-select__form3 form">
+           <form action="select3.php" method="post" class="table-block-select__form3 arrow">
              <select>
                <option>Status</option>
                <option value="Sent">Sent</option>
@@ -61,7 +61,7 @@
          <div class="table-block-select__name">
           <p>Stella</p>
          </div><!-- /.table-block-select__name -->
-          <form action="select4.php" method="post" class="table-block-select__form4 form">
+          <form action="select4.php" method="post" class="table-block-select__form4 arrow">
             <select>
               <option value="Sent">Sent</option>
               <option value="Draft">Draft</option>
@@ -83,7 +83,7 @@
          <div class="table-block-select__name">
           <p>IT corp international</p>
          </div><!-- /.table-block-select__name -->
-          <form action="select5.php" method="post" class="table-block-select__form5 form">
+          <form action="select5.php" method="post" class="table-block-select__form5 arrow">
             <select>
               <option value="Draft">Draft</option>
               <option value="Sent">Sent</option>
@@ -142,7 +142,51 @@
         </div><!-- /.projects-block -->
 
       </div><!-- /.container -->
-    </section><!-- /.features -->
+    </section><!-- /.projects -->
+
+    <section class="form" id="form">
+      <div class="container">
+        <div class="form__block">
+          <form action="#" class="form__project">
+            <h2 class="form__title">Add project</h2>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="" class="form__label">Name<span>*</span></label>
+                <input type="text" class="form__input input" placeholder="Project #1723">
+               </div><!-- /.form__group -->
+              <div class="form__group">
+                <label for="" class="form__label">Client<span>*</span></label>
+                <input type="text" class="form__input input" placeholder="Project #1723">
+               </div><!-- /.form__group -->
+            </div><!-- /.form__row -->
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="" class="form__label">E-mail<span>*</span></label>
+                <input type="text" class="form__input input" placeholder="project1723@gmail.com">
+               </div><!-- /.form__group -->
+              <div class="form__group">
+                <label for="" class="form__label">Admin<span>*</span></label>
+                <input type="text" class="form__input input" placeholder="Admin">
+               </div><!-- /.form__group -->
+            </div><!-- /.form__row -->
+            
+            <div class="form__row">
+              <div class="form__group form__group_btn">
+                <input type="submit" class="button form__btn-cancel" value="Cancel">
+              </div><!-- /.form__group -->
+              <div class="form__group">
+                <div class="form__group form__group_btn">
+                  <input type="submit" class="button form__btn-add" value="Add">
+                </div><!-- /.form__group -->
+               </div><!-- /.form__group -->
+            </div><!-- /.form__row -->
+ 
+            
+          </form>
+        </div><!-- /.form__block offer-block -->
+      </div><!-- /.container -->
+    </section><!-- /.form -->
  </main>
 
  <!-- Main style -->

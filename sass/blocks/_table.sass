@@ -22,6 +22,7 @@
   &-select
    margin-left: 28px
    display: flex
+   //max-width: 640px
    
    &__form1
     //min-width: 246px
@@ -62,5 +63,50 @@
     box-shadow: 0 6px 16px rgba(51, 51, 51, 0.07)
     opacity: 1
 
-  
+@media (max-width: 991px)
+ .table
+  &-title
+   margin: 56px 0 42px
+   text-align: center 
+
+@media (max-width: 768px)
+ .table
+  &-title
+   margin: 46px 0 32px
+  &-block
+   &-checkbox
+    margin-left: 5px
+   &-select
+    margin-left: 18px
+    
+    &__form1
+     //max-width: 246px
+     //background-position: 16%
+    &__form2
+     //max-width: 246px
+     margin-left: 0
+     background-position: 85%
+    &__form3
+     //max-width: 246px
+     margin-left: 0
+     background-position: 90%
+    &__form4
+     //max-width: 246px
+     margin-left: 0
+     background-position: 95%
+     select
+      min-width: 90px
+    &__form5
+     //max-width: 246px
+     margin-left: 0
+     background-position: 95%
+     select
+      min-width: 90px
+    &__number
+     //max-width: 246px
+     margin-left: 0
+    &__name
+     //max-width: 246px
+     margin-left: 0
+   
  

@@ -1,0 +1,89 @@
+.form
+ padding-top: 55px
+ &__block
+  min-height: 328px
+  background-color: $bg-secondary
+ &__project
+  padding-left: 31px
+ &__title
+  padding: 32px 0 26px
+  font-size: 20px
+  line-height: 26px
+  font-weight: 400
+ &__row
+  display: flex
+  align-items: center
+  margin-bottom: 30px
+ &__group
+  padding-right: 45px
+  //flex-basis: 50%
+  &_btn
+   padding-right: 18px
+ &__label
+  display: block
+  color: #6d6e71
+  font-size: 17px
+  span
+   padding-left: 3px
+   color: #c53d58
+   font-size: 12px
+ &__input
+ &__btn-cancel
+  padding: 18px 29px 17px 36px
+  border: 2px solid #576b87
+  border-radius: 5px
+  color: #576b87
+  &:hover
+   background-color: #376b8b
+   color: $bg-secondary
+  &:focus
+   background-color: #112a42
+   border-color: #112a42
+   color: $bg-secondary
+ &__btn-add
+  padding: 18px 35px 17px
+  background-color: #ffee36
+  border-radius: 5px
+  color: #253244
+  &:hover
+   background-color: #f1e76e
+   color: $bg-secondary
+  &:focus
+   background-color: #c1c1be
+   color: $bg-secondary
+ 
+
+
+@media (max-width: 992px)
+ .form
+  &__block
+  &__title
+  &__row
+  &__group
+   flex-basis: 50%
+   //width: 100%
+   &_btn
+    flex-basis: 20%
+  &__input
+   width: 100%
+
+@media (max-width: 768px)
+ .form
+  &__block
+   padding: 0 30px
+  &__project
+   padding: 0
+  &__title
+   text-align: center
+  &__row
+   flex-direction: column
+   margin-bottom: 0
+  &__group
+   padding: 0
+   flex-basis: 100%
+   //width: 80%
+   &_btn
+  &__btn-cancel
+   margin-bottom: 20px
+  &__input
+   margin-bottom: 20px
