@@ -13,12 +13,12 @@
   //flex-wrap: wrap
   align-items: center
   max-width: 980px
-  height: 45px
+  min-height: 45px
   background-color: $bg-secondary
   &:last-child
    margin: 0
   &-checkbox
-   margin-left: 10px
+   margin-left: 14px
   &-select
    margin-left: 28px
    display: flex
@@ -74,39 +74,57 @@
   &-title
    margin: 46px 0 32px
   &-block
+   flex-direction: column
    &-checkbox
     margin-left: 5px
    &-select
-    margin-left: 18px
+    margin-left: 0
+    width: 100%
+    justify-content: space-around
     
     &__form1
-     //max-width: 246px
-     //background-position: 16%
     &__form2
-     //max-width: 246px
      margin-left: 0
      background-position: 85%
     &__form3
-     //max-width: 246px
      margin-left: 0
      background-position: 90%
     &__form4
-     //max-width: 246px
      margin-left: 0
      background-position: 95%
      select
       min-width: 90px
     &__form5
-     //max-width: 246px
      margin-left: 0
      background-position: 95%
      select
       min-width: 90px
     &__number
-     //max-width: 246px
      margin-left: 0
     &__name
-     //max-width: 246px
      margin-left: 0
    
- 
+@media (max-width: 576px)
+ .table
+  &-title
+  &-block
+   &-checkbox
+   &-select
+    padding: 0 10px
+    font-size: 12px
+    text-align: center
+    &__form1
+     min-width: 55px
+    &__form2
+     
+    &__form3
+    &__form4
+     select
+      min-width: 55px
+    &__form5
+     select
+      min-width: 55px
+    &__number
+     margin-left: 0
+    &__name
+     margin-left: 0
