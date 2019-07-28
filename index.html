@@ -5,6 +5,11 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>Project</title>
+ <!-- Main style -->
+ <link rel="stylesheet" href="sass/style.css">
+ 
+</head>
+<body>
  <main class="hero">
   <div class="container">
       <div class="table-title">
@@ -150,24 +155,47 @@
           <form action="#" class="form__project">
             <h2 class="form__title">Add project</h2>
             <div class="form__row">
-              <div class="form__group">
-                <label for="" class="form__label">Name<span>*</span></label>
-                <input type="text" class="form__input input" placeholder="Project #1723">
+              <div class="form__group form__group_width">
+                <label for="" class="form__label">
+                 Name
+                 <span>*</span>
+                 <input type="text" class="form__input input" placeholder="Project #1723">
+                </label>
                </div><!-- /.form__group -->
-              <div class="form__group">
-                <label for="" class="form__label">Client<span>*</span></label>
-                <input type="text" class="form__input input" placeholder="Project #1723">
+              <div class="form__group form__group_width">
+                <label for="" class="form__label">
+                 Client
+                 <span>*</span>
+                 <input type="text" class="form__input input" placeholder="Project #1723">
+                </label>
                </div><!-- /.form__group -->
             </div><!-- /.form__row -->
 
             <div class="form__row">
-              <div class="form__group">
-                <label for="" class="form__label">E-mail<span>*</span></label>
-                <input type="text" class="form__input input" placeholder="project1723@gmail.com">
+              <div class="form__group form__group_width">
+                <label for="" class="form__label">
+                 E-mail
+                 <span>*</span>
+                 <input type="text" class="form__input input" placeholder="project1723@gmail.com">
+                </label>
+                
                </div><!-- /.form__group -->
-              <div class="form__group">
-                <label for="" class="form__label">Admin<span>*</span></label>
-                <input type="text" class="form__input input" placeholder="Admin">
+              <div class="form__group form__group_width">
+                <label for="" class="form__label">
+                 Admin
+                 <span>*</span>
+                 <input type="hidden" name="type-glass" id="select-type" value="Admin">
+                </label>
+                
+                <div class="select form__select">
+                 <div class="select_checked">Admin</div>
+                  <ul class="select__dropdown">
+                    <li class="select__option" data-value="Admin">Admin</li>
+                    <li class="select__option" data-value="Mike">Mike</li>
+                    <li class="select__option" data-value="Nikita">Nikita</li>
+                    <li class="select__option" data-value="Igor">Igor</li>
+                  </ul>
+               </div><!-- /.select_checked -->
                </div><!-- /.form__group -->
             </div><!-- /.form__row -->
             
@@ -175,11 +203,9 @@
               <div class="form__group form__group_btn">
                 <input type="submit" class="button form__btn-cancel" value="Cancel">
               </div><!-- /.form__group -->
-              <div class="form__group">
-                <div class="form__group form__group_btn">
-                  <input type="submit" class="button form__btn-add" value="Add">
-                </div><!-- /.form__group -->
-               </div><!-- /.form__group -->
+              <div class="form__group form__group_btn">
+                <input type="submit" class="button form__btn-add" value="Add">
+              </div><!-- /.form__group -->
             </div><!-- /.form__row -->
  
             
@@ -188,14 +214,12 @@
       </div><!-- /.container -->
     </section><!-- /.form -->
  </main>
-
- <!-- Main style -->
- <link rel="stylesheet" href="sass/style.css">
- 
-</head>
-<body>
- 
-
-  
+<!-- jquery-2.2.4.min.js -->
+<script
+src="http://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+  <!--Пользовательский файл для настроек -->
+ <script src="js/main.js"></script>
 </body>
 </html>

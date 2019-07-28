@@ -191,6 +191,63 @@ ul {
   cursor: pointer;
 }
 
+/*Оформление select формы*/
+.select {
+  width: 365px;
+  border-bottom: 2px solid #dbdcdd;
+  position: relative;
+}
+
+.select:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("../img/arrow.png") no-repeat center;
+  background-size: 100%;
+  width: 9px;
+  height: 5px;
+}
+
+.select:hover {
+  cursor: pointer;
+}
+
+.select_checked {
+  color: #6d6e71;
+}
+
+.select__dropdown {
+  display: none;
+  margin: 0;
+  position: absolute;
+  top: 19px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #c1c1be;
+  list-style: none;
+}
+
+.select__dropdown_open {
+  display: block;
+}
+
+.select__dropdown:last-child {
+  padding-bottom: 20px;
+}
+
+.select__option {
+  padding: 20px 0 0 18px;
+  color: #c2c2c2;
+  font-style: italic;
+}
+
+.select__option:hover {
+  color: #6a6a6a;
+}
+
 /*Настройка шрифтов*/
 /*Настройка флексов*/
 .table-title {
@@ -394,8 +451,14 @@ ul {
   margin-bottom: 30px;
 }
 
+.form__select {
+  margin-top: 10px;
+}
+
 .form__group {
   padding-right: 45px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .form__group_btn {
@@ -408,10 +471,19 @@ ul {
   font-size: 17px;
 }
 
+.form__label:hover {
+  color: #000;
+}
+
 .form__label span {
   padding-left: 3px;
   color: #c53d58;
   font-size: 12px;
+}
+
+.form__input {
+  margin-top: 10px;
+  display: block;
 }
 
 .form__btn-cancel {
@@ -450,6 +522,9 @@ ul {
 }
 
 @media (max-width: 992px) {
+  .form__select {
+    width: 100%;
+  }
   .form__group {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -465,7 +540,7 @@ ul {
 
 @media (max-width: 768px) {
   .form__block {
-    padding: 0 30px;
+    padding: 0 30px 20px;
   }
   .form__project {
     padding: 0;
@@ -485,11 +560,14 @@ ul {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .form__btn-cancel {
-    margin-bottom: 20px;
+  .form__group_width {
+    width: 60%;
   }
   .form__input {
     margin-bottom: 20px;
+  }
+  .form__btn-cancel {
+    margin: 20px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
