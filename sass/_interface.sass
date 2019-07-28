@@ -1,5 +1,5 @@
 body
- //+light
+ +light
  color: $text-color
  background-color: $bg-body
  font-size: 14px
@@ -18,12 +18,6 @@ input
  &:focus
   outline: none
 
-/* button
- border: none 
- &:hover
-  cursor: pointer
- &:focus
-  outline: none */
 
 ul
  padding: 0
@@ -50,17 +44,11 @@ ul
    border: 1px solid #bbbdbf
    border-radius: 2px
 
+/*каретка*/
 .arrow
  background-image: url('../img/arrow.png')
  background-repeat: no-repeat
- //background-position: center
- //overflow: hidden
- 
  select
-  //width: 47px
-  //height: 9px
-  //color: #000000
-  //font-family: "Proxima Nova"
   min-width: 76px
   border: 0
   background-color: transparent
@@ -93,25 +81,13 @@ ul
   width: 132px
   h2
    font-size: 18px
-   //font-weight: 400
    line-height: 26px
   p
-   //margin-top: 9px
    font-size: 14px
    color: #6d6e71
    font-style: italic
    line-height: 18px
 
-/*Настройка секций*/
-.section
- padding: 55px 0 0
- &-title
-  font-size: 30px
-  +bold
-  //text-align: center
-  //text-transform: uppercase
- &__title //внешнюю геометрию задаем элементам по БЭМ, а не блокам
-  //margin-bottom: 100px
 
 //оформление input в форме
 .input
@@ -147,14 +123,10 @@ ul
   background-size: 100%
   width: 9px
   height: 5px
-  
  &:hover
   cursor: pointer
-  
  &_checked
   color: #6d6e71
-  //padding-left: 30px
-  //line-height: 80px
  &__dropdown
   display: none
   margin: 0
@@ -173,5 +145,4 @@ ul
   color: #c2c2c2
   font-style: italic
   &:hover
-   //background-color: $bg-secondary
    color: #6a6a6a
